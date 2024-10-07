@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1728269805 source:c:\users\admin\desktop\utn\chimpocofight palomino\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"visuales.h"
+	"chimpocos.h"
+
+1728261053 source:c:\users\admin\desktop\utn\chimpocofight palomino\visuales.cpp
+	<iostream>
+
+1728259256 c:\users\admin\desktop\utn\chimpocofight palomino\visuales.h
+
+1728269791 source:c:\users\admin\desktop\utn\chimpocofight palomino\chimpocos.cpp
+	<iostream>
+
+1728269791 c:\users\admin\desktop\utn\chimpocofight palomino\chimpocos.h
+
