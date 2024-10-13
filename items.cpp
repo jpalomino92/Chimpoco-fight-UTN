@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int atacar(){
-    cout << "ataca: " << endl;
+int usar_item(){
+    cout<<"usaste un item" << endl;
  return 0;
 }

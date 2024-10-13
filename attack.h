@@ -1,6 +1,7 @@
 #ifndef ATTACK_H_INCLUDED
 #define ATTACK_H_INCLUDED
 
-int attack( int selected_chimpoco[], int enemies[][] )
+
+int atacar();
 
 #endif // ATTACK_H_INCLUDED

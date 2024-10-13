@@ -1,7 +1,22 @@
 #include <iostream>
+#include <ctime>
+
 using namespace std;
 
+int obtenerNumeroRandom(int min, int max);
+
 int choose_chimpoco(int selected_chimpoco[]){
+    system("cls");
+
+    cout << "En un mundo muy muy lejano," << endl;
+    cout << "existe una raza de animales extraordinarios" << endl;
+    cout << "con habilidades especiales, hoy tendras el honor" << endl;
+    cout << "de elegir a tu compañero de batalla," << endl;
+    cout << "a tu primer Chimpoco!" << endl;
+    cout << "Estas listo para el gran torneo y convertirte en el campion de los chimpocos?!" << endl;
+    cout << "Vamos!" << endl;
+
+    system("pause");
 
     while(true){
         system("cls");
@@ -11,7 +26,7 @@ int choose_chimpoco(int selected_chimpoco[]){
         cout << "2 - Picante " << endl;
         cout << "3 - Freddy " << endl;
         cout << "4 - Rayin " << endl;
-        cout << "Choose your champion! " << endl;
+        cout << "Elige a tu campion! " << endl;
         cout <<" ----------------------" << endl;
         cin >> champion;
 
@@ -21,6 +36,7 @@ int choose_chimpoco(int selected_chimpoco[]){
             selected_chimpoco[1] = 40;
             selected_chimpoco[2] = 50;
             selected_chimpoco[3] = 1;
+            selected_chimpoco[4] = 1200;
             system("cls");
             return 0;
             break;
@@ -29,6 +45,7 @@ int choose_chimpoco(int selected_chimpoco[]){
             selected_chimpoco[1] = 55;
             selected_chimpoco[2] = 65;
             selected_chimpoco[3] = 2;
+            selected_chimpoco[4] = 500;
             system("cls");
             return 0;
             break;
@@ -37,6 +54,7 @@ int choose_chimpoco(int selected_chimpoco[]){
             selected_chimpoco[1] = 35;
             selected_chimpoco[2] = 55;
             selected_chimpoco[3] = 3;
+            selected_chimpoco[4] = 700;
             system("cls");
             return 0;
             break;
@@ -45,11 +63,12 @@ int choose_chimpoco(int selected_chimpoco[]){
             selected_chimpoco[1] = 15;
             selected_chimpoco[2] = 85;
             selected_chimpoco[3] = 4;
+            selected_chimpoco[4] = 600;
             system("cls");
             return 0;
             break;
         default:
-            cout << "please choose a valid option: " << endl;
+            cout << "por favor elige una opcion valida: " << endl;
             system("pause");
             break;
         }
@@ -60,9 +79,3 @@ return 0;
 }
 
 
-int get_enemies(int enemy []){
-    cout<< "lets get the enemies ready..." << endl;
-
-
-return 0;
-}

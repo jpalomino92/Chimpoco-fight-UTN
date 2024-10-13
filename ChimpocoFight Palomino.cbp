@@ -33,12 +33,27 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="attack.cpp">
-			<Option target="&lt;{~None~}&gt;" />
+			<Option target="Debug" />
 		</Unit>
 		<Unit filename="attack.h" />
+		<Unit filename="aventura.cpp" />
+		<Unit filename="aventura.h" />
+		<Unit filename="batalla.cpp" />
+		<Unit filename="batalla.h" />
 		<Unit filename="chimpocos.cpp" />
 		<Unit filename="chimpocos.h" />
+		<Unit filename="constantes.h" />
+		<Unit filename="estadisticas.cpp" />
+		<Unit filename="estadisticas.h" />
+		<Unit filename="items.cpp" />
+		<Unit filename="items.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="pasivas.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="pasivas.h">
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="visuales.cpp" />
 		<Unit filename="visuales.h" />
 		<Extensions />

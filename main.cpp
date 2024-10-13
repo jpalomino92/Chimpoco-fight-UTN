@@ -1,25 +1,37 @@
 #include <iostream>
 #include <cstdlib>
-#include <ctime>
+#include <string>
 
 
-#include"visuales.h"
-#include"chimpocos.h"
+#include "visuales.h"
+#include "chimpocos.h"
+#include "attack.h"
+#include "aventura.h"
+#include "constantes.h"
 
-int obtenerNumeroRandom(int min, int max);
 
 using namespace std;
 
 
-int main()
-{
+int main(){
+
+
+
     int option;
-    int S = 4;
-    int E = 5;
+
+    int enemies[E][6] = {
+    {150, 5, 15, 1,150,0},     // Enemigo 1
+    {300, 25, 45, 2,300,0},    // Enemigo 2
+    {450, 40, 55, 3,450,0},    // Enemigo 3
+    {700, 55, 75, 4,700,0},    // Enemigo 4
+    {1500, 25, 150, 5,1500,0}   // Enemigo 5
+    };
+    string nombre;
+
     int selected_chimpoco[S] = {};
-    int enemies[E][S];
-    int enemy[S];
-    int random_attack;
+
+
+
     while (true)
     {
         system("cls");
@@ -28,19 +40,15 @@ int main()
         switch (option)
         {
         case 1:
+            system("cls");
+            cout << "Ingrese su nombre: " << endl;
+            cin.ignore();
+            getline( cin, nombre);
+
             choose_chimpoco(selected_chimpoco);
-            for (int i = 0; i < S; i ++ ){
-                cout << selected_chimpoco[i] << endl;
-            }
+            empezar_aventura(selected_chimpoco,enemies);
 
-            for (int j = 0; j < E; j ++ ){
-                get_enemies(enemy);
 
-            }
-            //attack(selected_chimpoco , enemies)
-            //aca calculamos el ataque entre el maxi y minimo del ataque del vector posision 1 (min ataque) posicion 2 (Max ataque)
-            random_attack = obtenerNumeroRandom(selected_chimpoco[1], selected_chimpoco[2]);
-            cout <<"El ataque del chimpoco es: " <<random_attack << endl;
             system("pause");
             break;
         case 2:
@@ -66,10 +74,4 @@ int main()
 
 
 
-int obtenerNumeroRandom(int min, int max) {
-    // Generar la semilla basada en el tiempo actual
-    std::srand(std::time(nullptr));
 
-    // Generar el número aleatorio entre min y max
-    return min + std::rand() % ((max + 1) - min);
-}

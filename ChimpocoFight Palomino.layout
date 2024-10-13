@@ -2,29 +2,74 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+	<File name="aventura.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="782" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="batalla.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="81" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="attack.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="86" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="chimpocos.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2106" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="pasivas.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1143" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="751" topLine="9" />
+			<Cursor1 position="962" topLine="41" />
 		</Cursor>
 	</File>
-	<File name="visuales.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="items.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="72" topLine="0" />
+			<Cursor1 position="94" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="chimpocos.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="aventura.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="134" topLine="0" />
+			<Cursor1 position="85" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="visuales.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="attack.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="367" topLine="0" />
+			<Cursor1 position="73" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="chimpocos.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="visuales.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1070" topLine="29" />
+			<Cursor1 position="95" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="batalla.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="111" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="chimpocos.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="141" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="pasivas.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="174" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="visuales.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="560" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

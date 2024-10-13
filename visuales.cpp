@@ -12,3 +12,10 @@ void menu(){
     cout<<" ----------------------"<<endl;
     cout<<"Ingrese la opcion deseada: "<<endl;
 }
+
+void menu_aventura(){
+    system("cls");
+    cout<<" --- MENU Turno ---"<<endl;
+    cout<<" 1 - Atacar "<<endl;
+    cout<<" 2 - Usar Item "<<endl;
+}
