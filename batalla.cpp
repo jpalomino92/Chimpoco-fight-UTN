@@ -14,14 +14,18 @@ int obtenerNumeroRandom(int min, int max);
 
 
 
-int batalla(int selected_chimpoco[], int enemigo[S],bool game_over){
+int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over){
 
     bool turno_ataque_chimpoco = true;
-    int cont_turnos = 0;
+    int cont_turnos = 1;
     int random_attack;
     int accion;
+    int cargas_ataque = 1,cargas_defensa = 1,cargas_vida = 2 ;
 
     while(enemigo[VIDA_ACTUAL] > 0 && selected_chimpoco[VIDA_ACTUAL] > 0){
+
+            cout<<"turno numero: " << cont_turnos <<endl;
+            system("pause");
 
         if (turno_ataque_chimpoco){
             //mover arriba en caso que el turno del enemigo tambien se contabilice.
@@ -43,7 +47,15 @@ int batalla(int selected_chimpoco[], int enemigo[S],bool game_over){
                 system("pause");
                 break;
             case 2:
-                usar_item();
+                if(cargas_ataque == 0 && cargas_defensa == 0 && cargas_vida == 0){
+                    cout<<"No tienes mas posiciones.." << endl;
+                    cout<<"La unica opcion valida es atacar.."<<endl;
+                    enemigo[VIDA_ACTUAL] -= selected_chimpoco[ATAQUE_ACTUAL];
+                    if(enemigo[VIDA_ACTUAL] < 0){ enemigo[VIDA_ACTUAL] = 0;}
+                    cout<<"la nueva vida del enemigo es de: " << enemigo[VIDA_ACTUAL] << endl;
+                }else{
+                    usar_item(selected_chimpoco,cargas_ataque,cargas_defensa,cargas_vida);
+                }
                 system("pause");
                 break;
             default:

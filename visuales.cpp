@@ -19,3 +19,5 @@ void menu_aventura(){
     cout<<" 1 - Atacar "<<endl;
     cout<<" 2 - Usar Item "<<endl;
 }
+
+

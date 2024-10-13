@@ -41,7 +41,7 @@ int empezar_aventura(int selected_chimpoco[], int enemies[][S]){
 
             if(enemigo_indice == 5){
                     //hacer una funcion y que muestre algo mas aparte de esto
-                cout<<"sos el chimpocoMaster";
+                cout<<"sos el chimpocoMaster" << endl;
                 game_over = true;
             }
         }
