@@ -37,10 +37,10 @@
 1728828632 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\visuales.cpp
 	<iostream>
 
-1731877846 c:\users\admin\desktop\utn\chimpoco-fight-utn\attack.h
+1731895990 c:\users\admin\desktop\utn\chimpoco-fight-utn\attack.h
 	"constantes.h"
 
-1731879804 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\aventura.cpp
+1731895795 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\aventura.cpp
 	<iostream>
 	"pasivas.h"
 	"visuales.h"
@@ -52,16 +52,16 @@
 1728791024 c:\users\admin\desktop\utn\chimpoco-fight-utn\aventura.h
 	"constantes.h"
 
-1731877842 c:\users\admin\desktop\utn\chimpoco-fight-utn\pasivas.h
+1731895409 c:\users\admin\desktop\utn\chimpoco-fight-utn\pasivas.h
 
-1731877817 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\attack.cpp
+1731896402 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\attack.cpp
 	<iostream>
 	<ctime>
 	"visuales.h"
 	"constantes.h"
 	"pasivas.h"
 
-1731880001 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\pasivas.cpp
+1731895615 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\pasivas.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
@@ -78,7 +78,7 @@
 1731879047 c:\users\admin\desktop\utn\chimpoco-fight-utn\batalla.h
 	"constantes.h"
 
-1731880034 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\batalla.cpp
+1731896030 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\batalla.cpp
 	<iostream>
 	<ctime>
 	"visuales.h"

@@ -79,8 +79,6 @@ void pasiva_chimpoco(int selected_chimpoco[],int enemigo[],int turno,bool &conge
                 cout<<" Se activa la pasiva de Rayin.."<<endl;
                 congelado = true;
             }
-
-
             break;
     }
 
@@ -88,7 +86,41 @@ void pasiva_chimpoco(int selected_chimpoco[],int enemigo[],int turno,bool &conge
 };
 
 
-void pasiva_enemigo(int enemigo[],int turno){
-    cout<<"Esta es el numero de pasiva enemigo " <<enemigo[PASIVA]<<endl;
+void pasiva_enemigo(int enemigo[],int turno,bool &chimpoco_aturdido,int selected_chimpoco[]){
+    switch (enemigo[PASIVA]) {
+        case 1:
+            if(turno == 3){
+                enemigo[VIDA_ACTUAL] += 150;
+                enemigo[DANIO_MIN] = 15;
+                enemigo[DANIO_MAX] = 45;
+                    }
+            break;
+        case 2:
+            if(turno % 4 == 0){
+                chimpoco_aturdido = true;
+
+            }
+            break;
+        case 3:
+            cout<<"Se activo la pasiva de HelloCathy..."<<endl;
+            if(turno % 2 == 0){
+                cout<<"el ataque del chimpoco dismuyo!"<<endl;
+                selected_chimpoco[ATAQUE_ACTUAL] *= 0.70;
+            }else{
+                cout<<"el ataque del chimpoco aumento!"<<endl;
+                selected_chimpoco[ATAQUE_ACTUAL] *= 1.15;
+
+            }
+
+            cout<<"El nuevo ataque es: "<<selected_chimpoco[ATAQUE_ACTUAL]<<endl;
+            break;
+        case 4:
+
+
+            break;
+        case 5:
+            cout << "Cada dos turnos se ríe, lo que irrita y desconcierta a los chimpocos, haciendo que su daño se reduzca en un 20% y reciban un 15% más de daño el turno siguiente." << endl;
+            break;
+        }
 
 };

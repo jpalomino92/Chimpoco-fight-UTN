@@ -27,7 +27,7 @@ int empezar_aventura(int selected_chimpoco[], int enemies[][S]){
             system("cls");
 
             for (int i = 0; i < S; i ++ ){
-                enemigo[i] = enemies[enemigo_indice][i];
+                enemigo[i] = enemies[enemigo_indice][i];//enemigo_indice
             }
             cout<<"Las estadisticas del enemigo son:" << endl;
             imprimir_estadisticas_chimpo(enemigo);
