@@ -1,4 +1,11 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+#include "constantes.h"
+
+
+
 using namespace std;
 
 void imprimir_pasivas_enemigos(int pasiva){
@@ -41,3 +48,47 @@ void imprimir_pasivas_chimpocos(int pasiva){
     }
 
 }
+
+void pasiva_chimpoco(int selected_chimpoco[],int enemigo[],int turno,bool &congelado){
+    srand(static_cast<unsigned int>(time(0)));
+    int probabilidad = rand() % 100 + 1;
+    switch (selected_chimpoco[PASIVA]) {
+        case 1:
+            cout<<" Se activa pasiva de Rockito..ataque del enemigo disminuido.."<<endl;
+            cout<<"EL ataque del enemigo era de: " <<enemigo[ATAQUE_ACTUAL]<<endl;
+            enemigo[ATAQUE_ACTUAL] = enemigo[ATAQUE_ACTUAL] * 0.85;
+            cout<<" el nuevo ataque es de: " <<enemigo[ATAQUE_ACTUAL]<<endl;
+            break;
+        case 2:
+            if (probabilidad <= 15){
+                cout<<" Se activa la pasiva de Picante.."<<endl;
+                cout<<"El ataque del chimpoco era de :"<<selected_chimpoco[ATAQUE_ACTUAL]<<endl;
+                selected_chimpoco[ATAQUE_ACTUAL] *= 2;
+                cout<<"El nuevo ataque del chimpoco es de :"<<selected_chimpoco[ATAQUE_ACTUAL]<<endl;
+            }
+            break;
+        case 3:
+            if (probabilidad <= 15){
+                cout<<" Se activa la pasiva de Freddy.."<<endl;
+                congelado = true;
+
+            }
+            break;
+        case 4:
+            if (probabilidad <= 25){
+                cout<<" Se activa la pasiva de Rayin.."<<endl;
+                congelado = true;
+            }
+
+
+            break;
+    }
+
+
+};
+
+
+void pasiva_enemigo(int enemigo[],int turno){
+    cout<<"Esta es el numero de pasiva enemigo " <<enemigo[PASIVA]<<endl;
+
+};

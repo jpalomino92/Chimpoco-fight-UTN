@@ -31,11 +31,14 @@ int empezar_aventura(int selected_chimpoco[], int enemies[][S]){
             }
             cout<<"Las estadisticas del enemigo son:" << endl;
             imprimir_estadisticas_chimpo(enemigo);
-
-            batalla(selected_chimpoco,enemigo,game_over);
+            int cont_turnos = 1;
+            selected_chimpoco[VIDA_ACTUAL]= selected_chimpoco[VIDA];
+            batalla(selected_chimpoco,enemigo,game_over,cont_turnos);
 
             if(game_over == false){
                 enemigo_indice++;
+            }else{
+                cout<<"Tu chimpoco fue vencido..."<<endl;
             }
 
 

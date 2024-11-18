@@ -70,7 +70,7 @@ int usar_item(int selected_chimpoco[],int &cargas_ataque,int &cargas_defensa,int
             cout<<"Danio Maximo: "<< selected_chimpoco[DANIO_MAX] << endl;
             break;
         case 2:
-            selected_chimpoco[VIDA_ACTUAL] *= 1.20;
+            selected_chimpoco[VIDA_ACTUAL] += (selected_chimpoco[VIDA] * 0.20);
             cargas_defensa--;
             cout<<"Los Nueva vida es : " <<endl;
             cout<<"Vida: "<< selected_chimpoco[VIDA_ACTUAL] << endl;

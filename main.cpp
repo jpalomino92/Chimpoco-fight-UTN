@@ -20,11 +20,11 @@ int main(){
     int option;
 
     int enemies[E][6] = {
-    {150, 5, 15, 1,150,0},     // Enemigo 1
-    {300, 25, 45, 2,300,0},    // Enemigo 2
-    {450, 40, 55, 3,450,0},    // Enemigo 3
-    {700, 55, 75, 4,700,0},    // Enemigo 4
-    {1500, 25, 150, 5,1500,0}   // Enemigo 5
+    {150, 5, 15, 1,150,0},     // Enemigo 1 Stitchard
+    {300, 25, 45, 2,300,0},    // Enemigo 2 FurbyZhor
+    {450, 40, 55, 3,450,0},    // Enemigo 3 HelloCathy
+    {700, 55, 75, 4,700,0},    // Enemigo 4 BabyYorda
+    {1500, 25, 150, 5,1500,0}   // Enemigo 5 TioMickey
     };
     string nombre;
 
@@ -45,7 +45,7 @@ int main(){
             cin.ignore();
             getline( cin, nombre);
 
-            choose_chimpoco(selected_chimpoco);
+            choose_chimpoco(selected_chimpoco); // chimpocos.cpp
             empezar_aventura(selected_chimpoco,enemies);
 
 
