@@ -8,6 +8,7 @@
 #include "attack.h"
 #include "aventura.h"
 #include "constantes.h"
+#include "versus.h"
 
 
 using namespace std;
@@ -27,8 +28,10 @@ int main(){
     {1500, 25, 150, 5,1500,0}   // Enemigo 5 TioMickey
     };
     string nombre;
+    string nombre2;
 
     int selected_chimpoco[S] = {};
+    int selected_chimpoco2[S] = {};
 
 
 
@@ -45,13 +48,37 @@ int main(){
             cin.ignore();
             getline( cin, nombre);
 
-            choose_chimpoco(selected_chimpoco); // chimpocos.cpp
+            choose_chimpoco(selected_chimpoco);
             empezar_aventura(selected_chimpoco,enemies);
 
 
             system("pause");
             break;
         case 2:
+            system("cls");
+            cout << "Ingrese el nombre del jugador 1: " << endl;
+            cin.ignore();
+            getline( cin, nombre);
+            choose_chimpoco(selected_chimpoco);
+
+            system("cls");
+            cout << "Ingrese el nombre del jugador 2: " << endl;
+            cin.ignore();
+            getline( cin, nombre2);
+            choose_chimpoco(selected_chimpoco2);
+
+            batalla_versus(selected_chimpoco,selected_chimpoco2);
+
+            if(selected_chimpoco[VIDA_ACTUAL] == 0) {
+                system("cls");
+                cout << "El ganador es el jugador: "<<nombre2 << endl;
+                system("pause");
+            }else {
+                system("cls");
+                cout << "El ganador es el jugador: "<<nombre << endl;
+                system("pause");
+            }
+
             break;
         case 3:
             break;

@@ -8,6 +8,7 @@
     const int PASIVA = 3;
     const int VIDA_ACTUAL = 4;
     const int ATAQUE_ACTUAL = 5;
+    const int CONGELADO =6;
     const int E = 5;
     const int S = 6;
 

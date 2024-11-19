@@ -12,19 +12,19 @@ void imprimir_pasivas_enemigos(int pasiva){
 
         switch (pasiva) {
         case 1:
-            cout << "Al tercer turno entra en un ataque de ira, lo que aumenta sus puntos de vida en 150 y su daño de 15 a 45." << endl;
+            cout << "Al tercer turno entra en un ataque de ira, lo que aumenta sus puntos de vida en 150 y su daï¿½o de 15 a 45." << endl;
             break;
         case 2:
             cout << "Cada 4 turnos se pone a cantar, lo que aturde a los chimpocos y les hace perder un turno." << endl;
             break;
         case 3:
-            cout << "El primer turno recibe un 15% más de daño, pero el segundo un 30% menos. Continúa esa iteración todo el combate." << endl;
+            cout << "El primer turno recibe un 15% mï¿½s de daï¿½o, pero el segundo un 30% menos. Continï¿½a esa iteraciï¿½n todo el combate." << endl;
             break;
         case 4:
-            cout << "Cada 3 turnos comanda el turno del chimpoco, lo que puede hacer que tome una poción, o ataque de forma aleatoria." << endl;
+            cout << "Cada 3 turnos comanda el turno del chimpoco, lo que puede hacer que tome una pociï¿½n, o ataque de forma aleatoria." << endl;
             break;
         case 5:
-            cout << "Cada dos turnos se ríe, lo que irrita y desconcierta a los chimpocos, haciendo que su daño se reduzca en un 20% y reciban un 15% más de daño el turno siguiente." << endl;
+            cout << "Cada dos turnos se rï¿½e, lo que irrita y desconcierta a los chimpocos, haciendo que su daï¿½o se reduzca en un 20% y reciban un 15% mï¿½s de daï¿½o el turno siguiente." << endl;
             break;
         }
 }
@@ -33,10 +33,10 @@ void imprimir_pasivas_chimpocos(int pasiva){
 
         switch (pasiva) {
         case 1:
-            cout << "Reducción de daño recibido 15%" << endl;
+            cout << "Reducciï¿½n de daï¿½o recibido 15%" << endl;
             break;
         case 2:
-            cout << "15% chance de golpe crítico (daño *2)" << endl;
+            cout << "15% chance de golpe crï¿½tico (daï¿½o *2)" << endl;
             break;
         case 3:
             cout << "15% chance de congelar al enemigo al atacar o defender (el enemigo congelado pierde los siguientes 2 turnos )" << endl;
@@ -86,7 +86,7 @@ void pasiva_chimpoco(int selected_chimpoco[],int enemigo[],int turno,bool &conge
 };
 
 
-void pasiva_enemigo(int enemigo[],int turno,bool &chimpoco_aturdido,int selected_chimpoco[]){
+void pasiva_enemigo(int enemigo[],int turno,bool &chimpoco_aturdido,int selected_chimpoco[],bool &enemigo_control,bool &irritado){
     switch (enemigo[PASIVA]) {
         case 1:
             if(turno == 3){
@@ -115,12 +115,19 @@ void pasiva_enemigo(int enemigo[],int turno,bool &chimpoco_aturdido,int selected
             cout<<"El nuevo ataque es: "<<selected_chimpoco[ATAQUE_ACTUAL]<<endl;
             break;
         case 4:
-
-
+            if(turno % 3 == 0) {
+                enemigo_control = true;
+            }
             break;
         case 5:
-            cout << "Cada dos turnos se ríe, lo que irrita y desconcierta a los chimpocos, haciendo que su daño se reduzca en un 20% y reciban un 15% más de daño el turno siguiente." << endl;
+            if(turno % 2 == 0) {
+                irritado = true;
+            }
             break;
         }
 
 };
+
+void enemigo_controlando() {
+
+}

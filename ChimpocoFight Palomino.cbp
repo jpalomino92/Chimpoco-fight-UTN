@@ -32,9 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="attack.cpp">
-			<Option target="Debug" />
-		</Unit>
+		<Unit filename="attack.cpp" />
 		<Unit filename="attack.h" />
 		<Unit filename="aventura.cpp" />
 		<Unit filename="aventura.h" />
@@ -48,12 +46,12 @@
 		<Unit filename="items.cpp" />
 		<Unit filename="items.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="pasivas.cpp">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="pasivas.h">
-			<Option target="Debug" />
-		</Unit>
+		<Unit filename="pasivas.cpp" />
+		<Unit filename="pasivas.h" />
+		<Unit filename="random.cpp" />
+		<Unit filename="random.h" />
+		<Unit filename="versus.cpp" />
+		<Unit filename="versus.h" />
 		<Unit filename="visuales.cpp" />
 		<Unit filename="visuales.h" />
 		<Extensions />

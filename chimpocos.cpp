@@ -3,7 +3,6 @@
 
 using namespace std;
 
-int obtenerNumeroRandom(int min, int max);
 
 int choose_chimpoco(int selected_chimpoco[]){
     system("cls");
@@ -11,7 +10,7 @@ int choose_chimpoco(int selected_chimpoco[]){
     cout << "En un mundo muy muy lejano," << endl;
     cout << "existe una raza de animales extraordinarios" << endl;
     cout << "con habilidades especiales, hoy tendras el honor" << endl;
-    cout << "de elegir a tu compañero de batalla," << endl;
+    cout << "de elegir a tu compaï¿½ero de batalla," << endl;
     cout << "a tu primer Chimpoco!" << endl;
     cout << "Estas listo para el gran torneo y convertirte en el campion de los chimpocos?!" << endl;
     cout << "Vamos!" << endl;
@@ -37,6 +36,7 @@ int choose_chimpoco(int selected_chimpoco[]){
             selected_chimpoco[2] = 50;
             selected_chimpoco[3] = 1;
             selected_chimpoco[4] = 1200;
+            selected_chimpoco[5] = 0;
             system("cls");
             return 0;
             break;
@@ -46,6 +46,7 @@ int choose_chimpoco(int selected_chimpoco[]){
             selected_chimpoco[2] = 65;
             selected_chimpoco[3] = 2;
             selected_chimpoco[4] = 500;
+            selected_chimpoco[5] = 0;
             system("cls");
             return 0;
             break;
@@ -55,6 +56,7 @@ int choose_chimpoco(int selected_chimpoco[]){
             selected_chimpoco[2] = 55;
             selected_chimpoco[3] = 3;
             selected_chimpoco[4] = 700;
+            selected_chimpoco[5] = 0;
             system("cls");
             return 0;
             break;
@@ -64,7 +66,9 @@ int choose_chimpoco(int selected_chimpoco[]){
             selected_chimpoco[2] = 85;
             selected_chimpoco[3] = 4;
             selected_chimpoco[4] = 600;
+            selected_chimpoco[5] = 0;
             system("cls");
+
             return 0;
             break;
         default:
