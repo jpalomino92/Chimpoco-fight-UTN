@@ -10,7 +10,7 @@ using namespace std;
 
 
 
-int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_turnos){
+int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_turnos,bool god_mode){
 
     bool turno_ataque_chimpoco = true;
     int random_attack;
@@ -26,11 +26,13 @@ int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_tur
     bool enemigo_control = false;
     bool irritado = false;
 
-    while(enemigo[VIDA_ACTUAL] > 0 && selected_chimpoco[VIDA_ACTUAL] > 0){
+    if(god_mode){cargas_ataque = 99,cargas_defensa = 99,cargas_vida = 99;}
 
-            system("cls");
-            cout<<"turno numero: " << cont_turnos <<endl;
-            system("pause");
+    while(enemigo[VIDA_ACTUAL] > 0 && selected_chimpoco[VIDA_ACTUAL] > 0){
+        system("cls");
+        cout<<"turno numero: " << cont_turnos <<endl;
+        system("pause");
+
 
         if (turno_ataque_chimpoco){
 
@@ -69,8 +71,15 @@ int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_tur
                     cout<<accion<<endl;
                     system("pause");
                 }else {
-                    menu_aventura();
-                    cin>>accion;
+                    if(god_mode) {
+                        menu_aventura_god();
+                        cin>>accion;
+                        if(accion == 3){return 1;}
+                    }else {
+                        menu_aventura();
+                        cin>>accion;
+                    }
+
                 }
                 if(irritado == true) {
                     random_attack = obtenerNumeroRandom(selected_chimpoco[DANIO_MIN], selected_chimpoco[DANIO_MAX]);

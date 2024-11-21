@@ -41,6 +41,8 @@
 		<Unit filename="chimpocos.cpp" />
 		<Unit filename="chimpocos.h" />
 		<Unit filename="constantes.h" />
+		<Unit filename="dado.cpp" />
+		<Unit filename="dado.h" />
 		<Unit filename="estadisticas.cpp" />
 		<Unit filename="estadisticas.h" />
 		<Unit filename="items.cpp" />

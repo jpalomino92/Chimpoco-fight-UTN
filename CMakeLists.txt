@@ -27,4 +27,5 @@ add_executable(Chimpoco_fight_UTN
         versus.cpp
         versus.h
         random.cpp
-        random.h)
+        random.h
+        dado.cpp)

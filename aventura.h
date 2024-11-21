@@ -4,6 +4,6 @@
 #include "constantes.h"
 
 
-int empezar_aventura(int selected_chimpoco[], int enemies[][S]);
+int empezar_aventura(int selected_chimpoco[], int enemies[][S],bool god_mode);
 
 #endif // AVENTURA_H_INCLUDED

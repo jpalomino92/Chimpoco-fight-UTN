@@ -20,4 +20,12 @@ void menu_aventura(){
     cout<<" 2 - Usar Item "<<endl;
 }
 
+void menu_aventura_god() {
+    system("cls");
+    cout<<" --- MENU Turno ---"<<endl;
+    cout<<" 1 - Atacar "<<endl;
+    cout<<" 2 - Usar Item "<<endl;
+    cout<<" 3 - Salir "<<endl;
+
+}
 

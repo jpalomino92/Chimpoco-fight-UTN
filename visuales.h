@@ -3,5 +3,5 @@
 
 void menu();
 void menu_aventura();
-
+void menu_aventura_god();
 #endif // VISUALES_H_INCLUDED

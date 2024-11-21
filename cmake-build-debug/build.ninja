@@ -126,6 +126,13 @@ build CMakeFiles/Chimpoco_fight_UTN.dir/random.cpp.obj: CXX_COMPILER__Chimpoco_f
   OBJECT_DIR = CMakeFiles\Chimpoco_fight_UTN.dir
   OBJECT_FILE_DIR = CMakeFiles\Chimpoco_fight_UTN.dir
 
+build CMakeFiles/Chimpoco_fight_UTN.dir/dado.cpp.obj: CXX_COMPILER__Chimpoco_fight_UTN_unscanned_Debug C$:/Users/Admin/Desktop/UTN/Chimpoco-fight-UTN/dado.cpp || cmake_object_order_depends_target_Chimpoco_fight_UTN
+  DEP_FILE = CMakeFiles\Chimpoco_fight_UTN.dir\dado.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Admin/Desktop/UTN/Chimpoco-fight-UTN/.
+  OBJECT_DIR = CMakeFiles\Chimpoco_fight_UTN.dir
+  OBJECT_FILE_DIR = CMakeFiles\Chimpoco_fight_UTN.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Chimpoco_fight_UTN
@@ -134,7 +141,7 @@ build CMakeFiles/Chimpoco_fight_UTN.dir/random.cpp.obj: CXX_COMPILER__Chimpoco_f
 #############################################
 # Link the executable Chimpoco_fight_UTN.exe
 
-build Chimpoco_fight_UTN.exe: CXX_EXECUTABLE_LINKER__Chimpoco_fight_UTN_Debug CMakeFiles/Chimpoco_fight_UTN.dir/attack.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/aventura.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/batalla.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/chimpocos.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/estadisticas.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/items.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/main.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/pasivas.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/visuales.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/versus.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/random.cpp.obj
+build Chimpoco_fight_UTN.exe: CXX_EXECUTABLE_LINKER__Chimpoco_fight_UTN_Debug CMakeFiles/Chimpoco_fight_UTN.dir/attack.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/aventura.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/batalla.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/chimpocos.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/estadisticas.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/items.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/main.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/pasivas.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/visuales.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/versus.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/random.cpp.obj CMakeFiles/Chimpoco_fight_UTN.dir/dado.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Chimpoco_fight_UTN.dir

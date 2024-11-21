@@ -20,28 +20,28 @@
 	<iostream>
 	<ctime>
 
-1731981316 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\main.cpp
+1732158120 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\main.cpp
 	<iostream>
 	<cstdlib>
 	<string>
 	"visuales.h"
 	"chimpocos.h"
-	"attack.h"
 	"aventura.h"
 	"constantes.h"
 	"versus.h"
+	"dado.h"
 
-1728828635 c:\users\admin\desktop\utn\chimpoco-fight-utn\visuales.h
+1732157598 c:\users\admin\desktop\utn\chimpoco-fight-utn\visuales.h
 
 1728782604 c:\users\admin\desktop\utn\chimpoco-fight-utn\chimpocos.h
 
-1728828632 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\visuales.cpp
+1732157598 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\visuales.cpp
 	<iostream>
 
 1731980719 c:\users\admin\desktop\utn\chimpoco-fight-utn\attack.h
 	"constantes.h"
 
-1731977443 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\aventura.cpp
+1732158120 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\aventura.cpp
 	<iostream>
 	"pasivas.h"
 	"visuales.h"
@@ -50,7 +50,7 @@
 	"constantes.h"
 	"estadisticas.h"
 
-1728791024 c:\users\admin\desktop\utn\chimpoco-fight-utn\aventura.h
+1732157146 c:\users\admin\desktop\utn\chimpoco-fight-utn\aventura.h
 	"constantes.h"
 
 1731976792 c:\users\admin\desktop\utn\chimpoco-fight-utn\pasivas.h
@@ -76,10 +76,10 @@
 
 1728830287 c:\users\admin\desktop\utn\chimpoco-fight-utn\items.h
 
-1731879047 c:\users\admin\desktop\utn\chimpoco-fight-utn\batalla.h
+1732157142 c:\users\admin\desktop\utn\chimpoco-fight-utn\batalla.h
 	"constantes.h"
 
-1731978422 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\batalla.cpp
+1732158030 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\batalla.cpp
 	<iostream>
 	"visuales.h"
 	"constantes.h"
@@ -111,4 +111,11 @@
 	"items.h"
 	"attack.h"
 	"random.h"
+
+1732151658 source:c:\users\admin\desktop\utn\chimpoco-fight-utn\dado.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1732151796 c:\users\admin\desktop\utn\chimpoco-fight-utn\dado.h
 
