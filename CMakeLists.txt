@@ -24,8 +24,8 @@ add_executable(Chimpoco_fight_UTN
     pasivas.h
     visuales.cpp
     visuales.h
-        versus.cpp
-        versus.h
-        random.cpp
-        random.h
-        dado.cpp)
+    versus.cpp
+    versus.h
+    random.cpp
+    random.h
+    dado.cpp)

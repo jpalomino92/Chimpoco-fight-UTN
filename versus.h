@@ -8,7 +8,7 @@
 #include "constantes.h"
 
 
-int batalla_versus(int selected_chimpoco[], int enemigo[S]);
+int batalla_versus(int selected_chimpoco[], int enemigo[S],int estadisticas[][S],int aventura);
 
 
 

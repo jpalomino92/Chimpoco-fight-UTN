@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int usar_item(int selected_chimpoco[],int &cargas_ataque,int &cargas_defensa,int &cargas_vida){
+int usar_item(int selected_chimpoco[],int &cargas_ataque,int &cargas_defensa,int &cargas_vida,int estadisticas[][S],int aventura){
     int item_seleccionado;
     bool hay_posiones = false;
     while(hay_posiones == false){
@@ -13,7 +13,7 @@ int usar_item(int selected_chimpoco[],int &cargas_ataque,int &cargas_defensa,int
         cout<<" --- MENU Items ---"<<endl;
         cout<<" 1 - Boost de Ataque por 2 turnos (+30% Ataque) -  " << cargas_ataque << " Carga" <<endl;
         cout<<" 2 - Boost de Defensa por 2 turnos (+20% Defensa) -  " << cargas_defensa << " Carga" <<endl;
-        cout<<" 3 - Poción de vida (Cura 50% de la vida total) -  " << cargas_vida << " Carga" <<endl;
+        cout<<" 3 - Pociï¿½n de vida (Cura 50% de la vida total) -  " << cargas_vida << " Carga" <<endl;
         cin>> item_seleccionado;
 
         switch (item_seleccionado)
@@ -63,6 +63,7 @@ int usar_item(int selected_chimpoco[],int &cargas_ataque,int &cargas_defensa,int
             selected_chimpoco[DANIO_MIN] *= 1.30;
             selected_chimpoco[DANIO_MAX] *= 1.30;
             cargas_ataque-- ;
+            estadisticas[aventura][BOOST_ATAQUE]++;
             cout<<"cargas de ataque disponibles: "<< cargas_ataque<<endl;
 
             cout<<"Los nuevos ataques son : " <<endl;
@@ -72,12 +73,14 @@ int usar_item(int selected_chimpoco[],int &cargas_ataque,int &cargas_defensa,int
         case 2:
             selected_chimpoco[VIDA_ACTUAL] += (selected_chimpoco[VIDA] * 0.20);
             cargas_defensa--;
+            estadisticas[aventura][BOOST_DEFENSA]++;
             cout<<"Los Nueva vida es : " <<endl;
             cout<<"Vida: "<< selected_chimpoco[VIDA_ACTUAL] << endl;
             break;
         case 3:
             selected_chimpoco[VIDA_ACTUAL] += (selected_chimpoco[VIDA] * 0.50);
             cargas_vida--;
+            estadisticas[aventura][POCION_VIDA]++;
             if(selected_chimpoco[VIDA_ACTUAL] > selected_chimpoco[VIDA]) selected_chimpoco[VIDA_ACTUAL] = selected_chimpoco[VIDA];
             cout<<"Los Nueva vida es : " <<endl;
             cout<<"Vida: "<< selected_chimpoco[VIDA_ACTUAL] << endl;

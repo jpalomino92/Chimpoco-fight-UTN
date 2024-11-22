@@ -11,6 +11,7 @@
 #include "dado.h"
 
 
+
 using namespace std;
 
 
@@ -19,7 +20,7 @@ int main(){
 
 
     int option;
-
+    int aventura = 0;
     int enemies[E][6] = {
     {150, 5, 15, 1,150,0},     // Enemigo 1 Stitchard
     {300, 25, 45, 2,300,0},    // Enemigo 2 FurbyZhor
@@ -34,6 +35,12 @@ int main(){
     int selected_chimpoco2[S] = {};
     int dado,dado2;
     bool god_mode = false;
+    int estadisticas[E][6];
+    for (int i = 0; i < E; i++) {
+        for (int j = 0; j < 6; j++) {
+            estadisticas[i][j] = 0;
+        }
+    }
 
 
     while (true)
@@ -50,8 +57,8 @@ int main(){
             getline( cin, nombre);
 
             choose_chimpoco(selected_chimpoco);
-            empezar_aventura(selected_chimpoco,enemies,god_mode);
-
+            empezar_aventura(selected_chimpoco,enemies,god_mode,estadisticas,aventura);
+            aventura++;
 
             system("pause");
             break;
@@ -104,7 +111,7 @@ int main(){
                 choose_chimpoco(selected_chimpoco);
             }
 
-            batalla_versus(selected_chimpoco,selected_chimpoco2);
+            batalla_versus(selected_chimpoco,selected_chimpoco2, estadisticas, aventura);
 
             if(selected_chimpoco[VIDA_ACTUAL] == 0) {
                 system("cls");
@@ -127,14 +134,17 @@ int main(){
 
             choose_chimpoco(selected_chimpoco);
             selected_chimpoco[VIDA] = 9999;
-            empezar_aventura(selected_chimpoco,enemies,god_mode);
+            empezar_aventura(selected_chimpoco,enemies,god_mode,estadisticas,aventura);
             god_mode = false;
 
             system("pause");
             break;
         case 4:
+            menu_estadisticas(estadisticas);
             break;
         case 5:
+            menu_manual();
+
             break;
         case 6:
             system("cls");

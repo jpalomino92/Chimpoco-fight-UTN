@@ -10,7 +10,7 @@ using namespace std;
 
 
 
-int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_turnos,bool god_mode){
+int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_turnos,bool god_mode,int estadisticas[][S],int aventura){
 
     bool turno_ataque_chimpoco = true;
     int random_attack;
@@ -69,6 +69,7 @@ int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_tur
                     cout<<"Baby Yorda a tomado el control de tu chimpoco.."<<endl;
                     accion=obtenerNumeroRandom(1,2);
                     cout<<accion<<endl;
+                    enemigo_control = false;
                     system("pause");
                 }else {
                     if(god_mode) {
@@ -84,6 +85,7 @@ int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_tur
                 if(irritado == true) {
                     random_attack = obtenerNumeroRandom(selected_chimpoco[DANIO_MIN], selected_chimpoco[DANIO_MAX]);
                     selected_chimpoco[ATAQUE_ACTUAL] = random_attack * 0.80;
+
                 }else {
                     random_attack = obtenerNumeroRandom(selected_chimpoco[DANIO_MIN], selected_chimpoco[DANIO_MAX]);
                     selected_chimpoco[ATAQUE_ACTUAL] = random_attack;
@@ -92,7 +94,7 @@ int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_tur
                 switch (accion){
                     case 1:
                         cout<<"el ataque de tu chimpoco es de : " << selected_chimpoco[ATAQUE_ACTUAL] << endl;
-                        atacar_chimpoco(selected_chimpoco,enemigo,game_over,cont_turnos,congelado,chimpoco_aturdido,enemigo_control,irritado);
+                        atacar_chimpoco(selected_chimpoco,enemigo,game_over,cont_turnos,congelado,chimpoco_aturdido,enemigo_control,irritado, estadisticas,aventura);
                         cout<<"la nueva vida del enemigo es de: " << enemigo[VIDA_ACTUAL] << endl;
                         system("pause");
                         break;
@@ -100,10 +102,10 @@ int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_tur
                         if(cargas_ataque == 0 && cargas_defensa == 0 && cargas_vida == 0){
                             cout<<"No tienes mas posiciones.." << endl;
                             cout<<"La unica opcion valida es atacar.."<<endl;
-                            atacar_chimpoco(selected_chimpoco,enemigo,game_over,cont_turnos,congelado,chimpoco_aturdido,enemigo_control,irritado);
+                            atacar_chimpoco(selected_chimpoco,enemigo,game_over,cont_turnos,congelado,chimpoco_aturdido,enemigo_control,irritado, estadisticas,aventura);
                             cout<<"la nueva vida del enemigo es de: " << enemigo[VIDA_ACTUAL] << endl;
                         }else{
-                            usar_item(selected_chimpoco,cargas_ataque,cargas_defensa,cargas_vida);
+                            usar_item(selected_chimpoco,cargas_ataque,cargas_defensa,cargas_vida, estadisticas,aventura);
                         }
                         system("pause");
                         break;
@@ -145,15 +147,16 @@ int batalla(int selected_chimpoco[], int enemigo[S],bool &game_over,int cont_tur
                     enemigo[ATAQUE_ACTUAL] = random_attack;
                 }
                 cout<<"el ataque del enemigo es de : " << enemigo[ATAQUE_ACTUAL] << endl;
-                atacar_enemigo(selected_chimpoco,enemigo,game_over,cont_turnos,congelado,chimpoco_aturdido,enemigo_control,irritado);
+                atacar_enemigo(selected_chimpoco,enemigo,game_over,cont_turnos,congelado,chimpoco_aturdido,enemigo_control,irritado, estadisticas,aventura);
                 cout<<"la nueva vida del chimpoco es de: " << selected_chimpoco[VIDA_ACTUAL] << endl;
                 turno_ataque_chimpoco = !turno_ataque_chimpoco;
             }
             cont_turnos++;
+            estadisticas[aventura][TURNOS_SOBREVIVIDOS]++;
             system("pause");
         }
     }
-     if(ataque_reiniciado == 0){
+     if(ataque_reiniciado == 0 && cargas_ataque == 0){
                 selected_chimpoco[DANIO_MIN] /= 1.30;
                 selected_chimpoco[DANIO_MAX] /= 1.30;}
 

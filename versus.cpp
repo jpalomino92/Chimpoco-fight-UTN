@@ -9,7 +9,7 @@
 using namespace std;
 
 
-int batalla_versus(int selected_chimpoco[], int enemigo[S]) {
+int batalla_versus(int selected_chimpoco[], int enemigo[S],int estadisticas[][S],int aventura) {
     bool turno_ataque_chimpoco = true;
     int random_attack;
     int accion;
@@ -102,7 +102,7 @@ int batalla_versus(int selected_chimpoco[], int enemigo[S]) {
                             cout<<"la nueva vida del enemigo es de: " << enemigo[VIDA_ACTUAL] << endl;
                             turno_ataque_chimpoco = !turno_ataque_chimpoco;
                         }else{
-                            usar_item(selected_chimpoco,cargas_ataque,cargas_defensa,cargas_vida);
+                            usar_item(selected_chimpoco,cargas_ataque,cargas_defensa,cargas_vida,estadisticas,aventura);
                         }
                     system("pause");
                     break;
@@ -181,7 +181,7 @@ int batalla_versus(int selected_chimpoco[], int enemigo[S]) {
                             cout<<"la nueva vida del enemigo es de: " << selected_chimpoco[VIDA_ACTUAL] << endl;
                             turno_ataque_chimpoco = !turno_ataque_chimpoco;
                         }else{
-                            usar_item(enemigo,cargas_ataque2,cargas_defensa2,cargas_vida2);
+                            usar_item(enemigo,cargas_ataque2,cargas_defensa2,cargas_vida2, estadisticas,aventura);
                         }
                         system("pause");
                     break;
